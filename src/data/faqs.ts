@@ -14,7 +14,7 @@ export const faqs: Faq[] = [
   {
     question: 'Which brands do you stock?',
     answer:
-      'We supply authorised, warranty-backed products from Saint-Gobain, Gyproc, USG Boral, Knauf, Armstrong, Everest, Aerolite, and Lloyd, among others. All stock is genuine with full manufacturer warranty.',
+      'We supply authorised, warranty-backed products from Gyproc, Shera, Visaka Vnext, Ramco Hilux, SPL INSUBoard, and Saint-Gobain, among others. All stock is genuine with full manufacturer warranty.',
   },
   {
     question: 'How long does a false ceiling project take?',

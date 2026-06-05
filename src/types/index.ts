@@ -50,7 +50,13 @@ export interface Testimonial {
 }
 
 export interface Brand {
+  slug: string
   name: string
+  highlight: string // bold first word(s) shown in accent
+  category: string
+  description: string
+  image: string // unsplash photo id
+  lines?: string[] // sub-brands / product lines
 }
 
 export interface Faq {
