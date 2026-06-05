@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 7% 4%;
+    --foreground: 40 33% 94%;
+    --card: 240 5% 10%;
+    --card-foreground: 40 33% 94%;
+    --popover: 240 5% 10%;
+    --popover-foreground: 40 33% 94%;
+    --primary: 28 56% 46%;
+    --primary-foreground: 40 33% 94%;
+    --secondary: 240 5% 16%;
+    --secondary-foreground: 40 33% 94%;
+    --muted: 240 5% 16%;
+    --muted-foreground: 40 10% 65%;
+    --accent: 33 50% 64%;
+    --accent-foreground: 240 7% 4%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 40 33% 94%;
+    --border: 240 5% 18%;
+    --input: 240 5% 18%;
+    --ring: 28 56% 46%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-charcoal text-warm-white font-sans antialiased;
+    margin: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-graphite;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-copper rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gold;
+  }
+
+  ::selection {
+    @apply bg-copper text-warm-white;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply backdrop-blur-md bg-white/5 border border-white/10;
+  }
+
+  .text-gradient-gold {
+    @apply bg-gradient-to-r from-bronze via-copper to-gold bg-clip-text text-transparent;
+  }
+
+  .marble-bg {
+    background-color: #0a0a0b;
+    background-image: radial-gradient(
+        at 20% 30%,
+        rgba(184, 115, 51, 0.08) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 80% 70%, rgba(212, 165, 116, 0.06) 0px, transparent 50%),
+      radial-gradient(at 50% 100%, rgba(139, 111, 71, 0.05) 0px, transparent 50%);
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28;
+  }
+
+  .shimmer-bg {
+    background: linear-gradient(
+      90deg,
+      rgba(42, 42, 46, 0) 0%,
+      rgba(42, 42, 46, 0.6) 50%,
+      rgba(42, 42, 46, 0) 100%
+    );
+    background-size: 1000px 100%;
+  }
+}
