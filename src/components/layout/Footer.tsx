@@ -44,8 +44,15 @@ export function Footer() {
       <div className="container grid gap-12 py-16 md:grid-cols-2 lg:grid-cols-4">
         {/* Brand */}
         <div>
-          <Link to="/" className="font-serif text-2xl font-bold text-warm-white">
-            Kottayam<span className="text-gradient-gold"> Interiors</span>
+          <Link to="/" className="flex items-center gap-2.5 font-serif text-2xl font-bold text-warm-white">
+            <img
+              src="/logo.png"
+              alt="Kottayam Interiors"
+              className="h-10 w-10 shrink-0 rounded-full"
+            />
+            <span>
+              Kottayam<span className="text-gradient-gold"> Interiors</span>
+            </span>
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-warm-white/60">
             {site.tagline} Crafting refined spaces and supplying genuine building

@@ -50,7 +50,12 @@ export function Navbar() {
       )}
     >
       <nav className="container flex items-center justify-between">
-        <Link to="/" className="group flex items-center gap-2">
+        <Link to="/" className="group flex items-center gap-2.5">
+          <img
+            src="/logo.png"
+            alt="Kottayam Interiors"
+            className="h-10 w-10 shrink-0 rounded-full md:h-11 md:w-11"
+          />
           <span className="font-serif text-xl font-bold tracking-tight text-warm-white md:text-2xl">
             Kottayam
             <span className="text-gradient-gold"> Interiors</span>
