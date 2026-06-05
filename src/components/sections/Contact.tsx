@@ -1,136 +1,20 @@
-import { useState } from 'react'
-import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
-import { Label } from '@/components/ui/label'
+import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 import { SectionHeader } from '@/components/shared/SectionHeader'
 import { Reveal } from '@/components/shared/Reveal'
-import { useToast } from '@/components/ui/use-toast'
 import { WhatsAppIcon } from '@/components/shared/SocialIcons'
 import { site } from '@/data/site'
-import { services } from '@/data/services'
-
-const initialForm = {
-  name: '',
-  phone: '',
-  email: '',
-  service: '',
-  message: '',
-}
 
 export function Contact() {
-  const [form, setForm] = useState(initialForm)
-  const { toast } = useToast()
-
-  const update =
-    (field: keyof typeof initialForm) =>
-    (
-      e: React.ChangeEvent<
-        HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-      >
-    ) =>
-      setForm((f) => ({ ...f, [field]: e.target.value }))
-
-  const onSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    toast({
-      variant: 'success',
-      title: 'Message sent!',
-      description: `Thanks ${form.name || 'there'} — we’ll be in touch within one business day.`,
-    })
-    setForm(initialForm)
-  }
-
   return (
     <section className="section-padding">
       <div className="container">
         <SectionHeader
           eyebrow="Get in Touch"
           title="Let’s plan your space"
-          subtitle="Tell us about your project and we’ll arrange a free consultation."
+          subtitle="Reach out and we’ll arrange a free consultation."
         />
 
-        <div className="mt-16 grid gap-10 lg:grid-cols-2">
-          {/* Form */}
-          <Reveal>
-            <form
-              onSubmit={onSubmit}
-              className="rounded-2xl border border-white/10 bg-graphite/60 p-8"
-            >
-              <div className="grid gap-5 sm:grid-cols-2">
-                <div className="space-y-2">
-                  <Label htmlFor="name">Name</Label>
-                  <Input
-                    id="name"
-                    required
-                    value={form.name}
-                    onChange={update('name')}
-                    placeholder="Your name"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="phone">Phone</Label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    required
-                    value={form.phone}
-                    onChange={update('phone')}
-                    placeholder="+91 ..."
-                  />
-                </div>
-              </div>
-
-              <div className="mt-5 space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input
-                  id="email"
-                  type="email"
-                  value={form.email}
-                  onChange={update('email')}
-                  placeholder="you@email.com"
-                />
-              </div>
-
-              <div className="mt-5 space-y-2">
-                <Label htmlFor="service">Service</Label>
-                <select
-                  id="service"
-                  value={form.service}
-                  onChange={update('service')}
-                  className="flex h-11 w-full rounded-md border border-white/10 bg-graphite-light/40 px-4 text-sm text-warm-white focus-visible:border-copper focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-copper"
-                >
-                  <option value="">Select a service…</option>
-                  {services.map((s) => (
-                    <option key={s.slug} value={s.title}>
-                      {s.title}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <div className="mt-5 space-y-2">
-                <Label htmlFor="message">Message</Label>
-                <Textarea
-                  id="message"
-                  value={form.message}
-                  onChange={update('message')}
-                  placeholder="Tell us about your project…"
-                />
-              </div>
-
-              <Button
-                type="submit"
-                variant="luxury"
-                size="lg"
-                className="mt-6 w-full"
-              >
-                Send Message <Send className="h-4 w-4" />
-              </Button>
-            </form>
-          </Reveal>
-
+        <div className="mt-16">
           {/* Info */}
           <Reveal delay={0.1}>
             <div className="flex h-full flex-col gap-6">
