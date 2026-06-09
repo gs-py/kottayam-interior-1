@@ -80,13 +80,6 @@ export const projects: Project[] = [
     image: 'photo-1517248135467-4c7edcad34c4',
   },
   {
-    id: 'p11',
-    title: 'Acoustic Office Ceiling',
-    category: 'Ceiling Works',
-    location: 'Kottayam',
-    image: 'photo-1604709178681-82d168a4b9d',
-  },
-  {
     id: 'p12',
     title: 'Feature Niche Panelling',
     category: 'Gypsum',

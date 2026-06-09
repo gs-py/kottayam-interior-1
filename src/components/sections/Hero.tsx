@@ -26,7 +26,7 @@ const item = {
 
 export function Hero() {
   return (
-    <section className="relative flex h-screen min-h-[700px] items-center overflow-hidden">
+    <section className="relative flex min-h-screen items-center overflow-hidden py-28 md:py-20">
       {/* Background */}
       <div className="absolute inset-0">
         <img
