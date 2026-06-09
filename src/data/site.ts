@@ -1,20 +1,55 @@
 import type { Stat } from '@/types'
 
+export interface Branch {
+  name: string
+  address: string
+  phones: { label: string; href: string }[]
+  mapLink: string
+  mapEmbed: string
+}
+
+export const branches: Branch[] = [
+  {
+    name: 'Kottayam (Main)',
+    address:
+      'Puthentharayil Building, near Indus Motors, Moolavattom, Nattakom, Kottayam, Kerala 686013',
+    phones: [
+      { label: '0481-2360100', href: 'tel:+914812360100' },
+      { label: '94474 04850', href: 'tel:+919447404850' },
+      { label: '95440 14999', href: 'tel:+919544014999' },
+      { label: '99612 25015', href: 'tel:+919961225015' },
+    ],
+    mapLink: 'https://maps.app.goo.gl/Gwdj44qyWwWYX9es6',
+    mapEmbed:
+      'https://www.google.com/maps?q=Interior+World+Moolavattom+Nattakom+Kottayam+686013&output=embed',
+  },
+  {
+    name: 'Thottakkadu',
+    address:
+      'Assariparambill Building, Parappa, Thottakkadu, Kerala 686539',
+    phones: [
+      { label: '94004 86502', href: 'tel:+919400486502' },
+      { label: '90720 05594', href: 'tel:+919072005594' },
+    ],
+    mapLink: 'https://maps.app.goo.gl/DJVDwf3uWzxoHJic6',
+    mapEmbed:
+      'https://www.google.com/maps?q=Interior+World+Parappa+Thottakkadu+Kerala+686539&output=embed',
+  },
+]
+
 export const site = {
   name: 'Kottayam Interiors',
   tagline: 'Luxury interiors. Trusted materials.',
-  phone: '+91 98470 00000',
-  phoneHref: 'tel:+919847000000',
-  whatsapp: '919847000000',
+  phone: '0481-2360100',
+  phoneHref: 'tel:+914812360100',
+  whatsapp: '919995438509',
   email: 'interiorworldktm@gmail.com',
-  address: 'MC Road, Kanjikuzhy, Kottayam, Kerala 686004',
+  address: branches[0].address,
   hours: 'Mon–Sat: 9:00 AM – 6:30 PM',
-  mapEmbed:
-    'https://www.google.com/maps?q=Kottayam,Kerala&output=embed',
+  mapEmbed: branches[0].mapEmbed,
   social: {
-    instagram: 'https://www.instagram.com/kottayaminteriors',
-    facebook: 'https://www.facebook.com/kottayaminteriors',
-    linkedin: 'https://www.linkedin.com/company/kottayaminteriors',
+    instagram: 'https://www.instagram.com/interior___world',
+    facebook: 'https://www.facebook.com/InteriorworldKottayam',
   },
 }
 

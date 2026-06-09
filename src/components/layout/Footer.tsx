@@ -4,12 +4,11 @@ import { MapPin, Phone, Mail, Clock, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { useToast } from '@/components/ui/use-toast'
-import { site } from '@/data/site'
+import { site, branches } from '@/data/site'
 import { productCategories } from '@/data/products'
 import {
   InstagramIcon,
   FacebookIcon,
-  LinkedInIcon,
   WhatsAppIcon,
 } from '@/components/shared/SocialIcons'
 
@@ -78,15 +77,6 @@ export function Footer() {
               <FacebookIcon className="h-4 w-4" />
             </a>
             <a
-              href={site.social.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              aria-label="LinkedIn"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-warm-white/70 transition-all hover:border-copper hover:text-copper"
-            >
-              <LinkedInIcon className="h-4 w-4" />
-            </a>
-            <a
               href={`https://wa.me/${site.whatsapp}`}
               target="_blank"
               rel="noreferrer"
@@ -141,17 +131,35 @@ export function Footer() {
           <h3 className="font-serif text-lg font-semibold text-warm-white">
             Get in Touch
           </h3>
-          <ul className="mt-5 space-y-4 text-sm text-warm-white/60">
-            <li className="flex items-start gap-3">
-              <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-copper" />
-              <span>{site.address}</span>
-            </li>
-            <li className="flex items-center gap-3">
-              <Phone className="h-4 w-4 shrink-0 text-copper" />
-              <a href={site.phoneHref} className="hover:text-copper">
-                {site.phone}
-              </a>
-            </li>
+          <ul className="mt-5 space-y-5 text-sm text-warm-white/60">
+            {branches.map((b) => (
+              <li key={b.name} className="space-y-2">
+                <div className="flex items-start gap-3">
+                  <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-copper" />
+                  <span>
+                    <span className="font-medium text-warm-white/80">
+                      {b.name}
+                    </span>
+                    <br />
+                    {b.address}
+                  </span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Phone className="mt-0.5 h-4 w-4 shrink-0 text-copper" />
+                  <span className="flex flex-wrap gap-x-3 gap-y-1">
+                    {b.phones.map((p) => (
+                      <a
+                        key={p.href}
+                        href={p.href}
+                        className="hover:text-copper"
+                      >
+                        {p.label}
+                      </a>
+                    ))}
+                  </span>
+                </div>
+              </li>
+            ))}
             <li className="flex items-center gap-3">
               <Mail className="h-4 w-4 shrink-0 text-copper" />
               <a href={`mailto:${site.email}`} className="hover:text-copper">

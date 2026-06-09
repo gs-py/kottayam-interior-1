@@ -1,8 +1,8 @@
-import { MapPin, Phone, Mail, Clock } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock, ExternalLink } from 'lucide-react'
 import { SectionHeader } from '@/components/shared/SectionHeader'
 import { Reveal } from '@/components/shared/Reveal'
 import { WhatsAppIcon } from '@/components/shared/SocialIcons'
-import { site } from '@/data/site'
+import { site, branches } from '@/data/site'
 
 export function Contact() {
   return (
@@ -19,13 +19,6 @@ export function Contact() {
           <Reveal delay={0.1}>
             <div className="flex h-full flex-col gap-6">
               <div className="grid gap-4 sm:grid-cols-2">
-                <InfoCard icon={MapPin} label="Visit Us" value={site.address} />
-                <InfoCard
-                  icon={Phone}
-                  label="Call Us"
-                  value={site.phone}
-                  href={site.phoneHref}
-                />
                 <InfoCard
                   icon={Mail}
                   label="Email Us"
@@ -45,20 +38,64 @@ export function Contact() {
                 Chat with us on WhatsApp
               </a>
 
-              <div className="flex-1 overflow-hidden rounded-2xl border border-white/10">
-                <iframe
-                  title="Kottayam Interiors location map"
-                  src={site.mapEmbed}
-                  className="h-full min-h-[260px] w-full"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+              {/* Branches */}
+              <div className="grid gap-6 lg:grid-cols-2">
+                {branches.map((b) => (
+                  <BranchCard key={b.name} branch={b} />
+                ))}
               </div>
             </div>
           </Reveal>
         </div>
       </div>
     </section>
+  )
+}
+
+function BranchCard({ branch }: { branch: (typeof branches)[number] }) {
+  return (
+    <div className="flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-graphite/40">
+      <div className="p-6">
+        <h3 className="font-serif text-xl font-semibold text-warm-white">
+          {branch.name}
+        </h3>
+        <div className="mt-4 flex items-start gap-3 text-sm text-warm-white/80">
+          <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-copper" />
+          <span>{branch.address}</span>
+        </div>
+        <div className="mt-4 flex items-start gap-3 text-sm">
+          <Phone className="mt-0.5 h-4 w-4 shrink-0 text-copper" />
+          <div className="flex flex-wrap gap-x-4 gap-y-1">
+            {branch.phones.map((p) => (
+              <a
+                key={p.href}
+                href={p.href}
+                className="text-warm-white/80 transition-colors hover:text-copper"
+              >
+                {p.label}
+              </a>
+            ))}
+          </div>
+        </div>
+        <a
+          href={branch.mapLink}
+          target="_blank"
+          rel="noreferrer"
+          className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-copper transition-all hover:gap-3"
+        >
+          Open in Google Maps <ExternalLink className="h-4 w-4" />
+        </a>
+      </div>
+      <div className="flex-1 overflow-hidden border-t border-white/10">
+        <iframe
+          title={`${branch.name} location map`}
+          src={branch.mapEmbed}
+          className="h-full min-h-[220px] w-full"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      </div>
+    </div>
   )
 }
 
