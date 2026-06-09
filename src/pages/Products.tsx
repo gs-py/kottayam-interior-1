@@ -5,7 +5,7 @@ import { Seo } from '@/components/shared/Seo'
 import { PageBanner } from '@/components/shared/PageBanner'
 import { Reveal } from '@/components/shared/Reveal'
 import { Badge } from '@/components/ui/badge'
-import { cn, unsplash } from '@/lib/utils'
+import { cn, img } from '@/lib/utils'
 import { products, productCategories } from '@/data/products'
 
 export default function Products() {
@@ -97,7 +97,7 @@ export default function Products() {
                   >
                     <div className="overflow-hidden">
                       <img
-                        src={unsplash(p.image, 500, 80)}
+                        src={img(p.image, 500, 80)}
                         alt={p.name}
                         loading="lazy"
                         className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"

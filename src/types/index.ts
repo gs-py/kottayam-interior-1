@@ -23,6 +23,7 @@ export interface Product {
   category: string
   image: string
   short: string
+  description?: string
   specs: { label: string; value: string }[]
 }
 

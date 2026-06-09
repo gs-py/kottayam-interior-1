@@ -6,7 +6,7 @@ import { Reveal } from '@/components/shared/Reveal'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { getProduct, getCategoryName, products } from '@/data/products'
-import { unsplash } from '@/lib/utils'
+import { img } from '@/lib/utils'
 
 export default function ProductDetail() {
   const { slug } = useParams()
@@ -33,7 +33,7 @@ export default function ProductDetail() {
         title={`${product.name} — ${product.brand} | Kottayam Interiors`}
         description={product.short}
         path={`/products/${product.slug}`}
-        image={unsplash(product.image, 1200, 80)}
+        image={img(product.image, 1200, 80)}
       />
       <PageBanner
         eyebrow={product.brand}
@@ -50,7 +50,7 @@ export default function ProductDetail() {
           <Reveal>
             <div className="overflow-hidden rounded-2xl border border-white/10">
               <img
-                src={unsplash(product.image, 900, 85)}
+                src={img(product.image, 900, 85)}
                 alt={product.name}
                 className="aspect-square w-full object-cover"
               />
@@ -64,7 +64,7 @@ export default function ProductDetail() {
             </h2>
             <p className="mt-2 text-copper">{product.brand}</p>
             <p className="mt-5 leading-relaxed text-warm-white/70">
-              {product.short}
+              {product.description ?? product.short}
             </p>
 
             {/* Spec table */}
@@ -123,7 +123,7 @@ export default function ProductDetail() {
                   className="group overflow-hidden rounded-2xl border border-white/10 bg-graphite/40 transition-colors hover:border-copper/40"
                 >
                   <img
-                    src={unsplash(p.image, 500, 80)}
+                    src={img(p.image, 500, 80)}
                     alt={p.name}
                     loading="lazy"
                     className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ChevronRight } from 'lucide-react'
-import { unsplash } from '@/lib/utils'
+import { img } from '@/lib/utils'
 
 interface Crumb {
   label: string
@@ -27,7 +27,7 @@ export function PageBanner({
     <section className="relative flex min-h-[50vh] items-center overflow-hidden pt-24">
       <div className="absolute inset-0">
         <img
-          src={unsplash(image, 1920, 80)}
+          src={img(image, 1920, 80)}
           alt=""
           aria-hidden="true"
           className="h-full w-full object-cover"

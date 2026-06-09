@@ -6,7 +6,7 @@ export const site = {
   phone: '+91 98470 00000',
   phoneHref: 'tel:+919847000000',
   whatsapp: '919847000000',
-  email: 'hello@kottayaminteriors.com',
+  email: 'interiorworldktm@gmail.com',
   address: 'MC Road, Kanjikuzhy, Kottayam, Kerala 686004',
   hours: 'Mon–Sat: 9:00 AM – 6:30 PM',
   mapEmbed:
