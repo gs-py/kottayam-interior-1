@@ -1,141 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://kottayaminteriors.com/</loc>
+    <loc>https://interiorworld.in/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/services</loc>
+    <loc>https://interiorworld.in/services</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/products</loc>
+    <loc>https://interiorworld.in/products</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/projects</loc>
+    <loc>https://interiorworld.in/projects</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/about</loc>
+    <loc>https://interiorworld.in/about</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/contact</loc>
+    <loc>https://interiorworld.in/contact</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <!-- Services -->
   <url>
-    <loc>https://kottayaminteriors.com/services/interior-design</loc>
+    <loc>https://interiorworld.in/services/interior-design</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/services/architecture</loc>
+    <loc>https://interiorworld.in/services/architecture</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/services/construction-consulting</loc>
+    <loc>https://interiorworld.in/services/construction-consulting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/services/material-supply</loc>
+    <loc>https://interiorworld.in/services/material-supply</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/services/ceiling-installation</loc>
+    <loc>https://interiorworld.in/services/ceiling-installation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/services/gypsum-works</loc>
+    <loc>https://interiorworld.in/services/gypsum-works</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <!-- Products -->
   <url>
-    <loc>https://kottayaminteriors.com/products/gyproc-gypsum-board</loc>
+    <loc>https://interiorworld.in/products/gyproc-gypsum-board</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/products/gyproc-kool-board</loc>
+    <loc>https://interiorworld.in/products/gyproc-kool-board</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/products/gyproc-dampline-board</loc>
+    <loc>https://interiorworld.in/products/gyproc-dampline-board</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/products/gyproc-moisture-resistant-board</loc>
+    <loc>https://interiorworld.in/products/gyproc-moisture-resistant-board</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/products/gypcore-oman-gypsum-board</loc>
+    <loc>https://interiorworld.in/products/gypcore-oman-gypsum-board</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/products/gyproc-jointing-compound</loc>
+    <loc>https://interiorworld.in/products/gyproc-jointing-compound</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/products/gyproc-ceiling-channels</loc>
+    <loc>https://interiorworld.in/products/gyproc-ceiling-channels</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/products/shera-fibre-cement-board</loc>
+    <loc>https://interiorworld.in/products/shera-fibre-cement-board</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/products/shera-plank</loc>
+    <loc>https://interiorworld.in/products/shera-plank</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/products/vnext-fibre-cement-board</loc>
+    <loc>https://interiorworld.in/products/vnext-fibre-cement-board</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/products/v-plank</loc>
+    <loc>https://interiorworld.in/products/v-plank</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/products/ramco-hilux-calcium-silicate-board</loc>
+    <loc>https://interiorworld.in/products/ramco-hilux-calcium-silicate-board</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/products/hilux-calcium-silicate-ceiling-tiles</loc>
+    <loc>https://interiorworld.in/products/hilux-calcium-silicate-ceiling-tiles</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/products/xlpe-insulation-sheets</loc>
+    <loc>https://interiorworld.in/products/xlpe-insulation-sheets</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kottayaminteriors.com/products/insuboard-xps</loc>
+    <loc>https://interiorworld.in/products/insuboard-xps</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

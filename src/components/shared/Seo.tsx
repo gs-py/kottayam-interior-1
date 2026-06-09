@@ -7,7 +7,7 @@ interface SeoProps {
   image?: string
 }
 
-const BASE_URL = 'https://kottayaminteriors.com'
+const BASE_URL = 'https://interiorworld.in'
 
 export function Seo({ title, description, path = '/', image }: SeoProps) {
   const url = `${BASE_URL}${path}`

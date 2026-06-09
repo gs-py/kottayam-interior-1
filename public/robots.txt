@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kottayaminteriors.com/sitemap.xml
+Sitemap: https://interiorworld.in/sitemap.xml
