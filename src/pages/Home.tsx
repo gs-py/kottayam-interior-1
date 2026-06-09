@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Interior World | Luxury Interior Design & Building Materials in Kerala"
-        description="Premium interior design, architecture, and genuine building material supply in Kottayam, Kerala. 20+ years of craftsmanship across residential & commercial projects."
+        title="Premium Gypsum Boards for Walls & Ceilings in Kerala | Interior World"
+        description="Our gypsum wall panels and gypsum false ceilings provide superior fire resistance, effective sound insulation, and long lasting durability."
         path="/"
       />
       <Hero />

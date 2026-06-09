@@ -11,9 +11,7 @@ const BASE_URL = 'https://kottayaminteriors.com'
 
 export function Seo({ title, description, path = '/', image }: SeoProps) {
   const url = `${BASE_URL}${path}`
-  const ogImage =
-    image ??
-    'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format'
+  const ogImage = image ?? `${BASE_URL}/logo.png`
 
   return (
     <Helmet>
