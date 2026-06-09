@@ -7,8 +7,8 @@ export default function Projects() {
   return (
     <>
       <Seo
-        title="Projects | Kottayam Interiors — Our Work in Kerala"
-        description="Explore residential, commercial, ceiling, and gypsum projects completed by Kottayam Interiors across central Kerala."
+        title="Projects | Interior World — Our Work in Kerala"
+        description="Explore residential, commercial, ceiling, and gypsum projects completed by Interior World across central Kerala."
         path="/projects"
       />
       <PageBanner

@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Seo
-        title="Kottayam Interiors | Luxury Interior Design & Building Materials in Kerala"
+        title="Interior World | Luxury Interior Design & Building Materials in Kerala"
         description="Premium interior design, architecture, and genuine building material supply in Kottayam, Kerala. 20+ years of craftsmanship across residential & commercial projects."
         path="/"
       />

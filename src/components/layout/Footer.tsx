@@ -46,11 +46,11 @@ export function Footer() {
           <Link to="/" className="flex items-center gap-2.5 font-serif text-2xl font-bold text-warm-white">
             <img
               src="/logo.png"
-              alt="Kottayam Interiors"
+              alt="Interior World"
               className="h-10 w-10 shrink-0 rounded-full"
             />
             <span>
-              Kottayam<span className="text-gradient-gold"> Interiors</span>
+              Interior<span className="text-gradient-gold"> World</span>
             </span>
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-warm-white/60">

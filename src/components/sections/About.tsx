@@ -15,7 +15,7 @@ export function About() {
           <div className="overflow-hidden rounded-2xl">
             <img
               src={unsplash('photo-1581094794329-c8112a89af12', 900, 80)}
-              alt="Kottayam Interiors design studio at work"
+              alt="Interior World design studio at work"
               loading="lazy"
               className="h-full w-full object-cover"
             />
@@ -46,7 +46,7 @@ export function About() {
 
           <Reveal delay={0.1}>
             <p className="mt-6 leading-relaxed text-warm-white/70">
-              Kottayam Interiors began with a simple belief — that a well-made
+              Interior World began with a simple belief — that a well-made
               space should feel as good as it looks, and last for generations.
               From a small materials shop to a full design-and-build studio, we
               have stayed close to the craft and closer to our clients.

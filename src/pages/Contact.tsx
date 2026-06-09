@@ -14,8 +14,8 @@ export default function Contact() {
   return (
     <>
       <Seo
-        title="Contact | Kottayam Interiors — Book a Free Consultation"
-        description="Get in touch with Kottayam Interiors for interior design, building materials, and installation in Kottayam, Kerala. Call, WhatsApp, or visit our showroom."
+        title="Contact | Interior World — Book a Free Consultation"
+        description="Get in touch with Interior World for interior design, building materials, and installation in Kottayam, Kerala. Call, WhatsApp, or visit our showroom."
         path="/contact"
       />
       <PageBanner

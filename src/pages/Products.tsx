@@ -31,7 +31,7 @@ export default function Products() {
   return (
     <>
       <Seo
-        title="Products | Kottayam Interiors — Gypsum, Drywall & Building Materials"
+        title="Products | Interior World — Gypsum, Drywall & Building Materials"
         description="Browse genuine gypsum boards, metal channels, fibre cement, insulation, drywall systems, and decorative panels from trusted brands in Kottayam, Kerala."
         path="/products"
       />

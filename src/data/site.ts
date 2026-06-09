@@ -38,7 +38,7 @@ export const branches: Branch[] = [
 ]
 
 export const site = {
-  name: 'Kottayam Interiors',
+  name: 'Interior World',
   tagline: 'Luxury interiors. Trusted materials.',
   phone: '0481-2360100',
   phoneHref: 'tel:+914812360100',

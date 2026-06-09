@@ -30,7 +30,7 @@ export default function ProductDetail() {
   return (
     <>
       <Seo
-        title={`${product.name} — ${product.brand} | Kottayam Interiors`}
+        title={`${product.name} — ${product.brand} | Interior World`}
         description={product.short}
         path={`/products/${product.slug}`}
         image={img(product.image, 1200, 80)}

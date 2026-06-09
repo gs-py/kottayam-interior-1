@@ -2,7 +2,7 @@ import type { Faq } from '@/types'
 
 export const faqs: Faq[] = [
   {
-    question: 'Where is Kottayam Interiors located?',
+    question: 'Where is Interior World located?',
     answer:
       'Our showroom and office are on MC Road, Kanjikuzhy, Kottayam, Kerala. We serve clients across Kottayam district and the wider central Kerala region including Pala, Changanassery, Ettumanoor, Vaikom, and Kumarakom.',
   },

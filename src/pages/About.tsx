@@ -35,8 +35,8 @@ export default function About() {
   return (
     <>
       <Seo
-        title="About | Kottayam Interiors — 20+ Years of Craftsmanship"
-        description="Learn the story of Kottayam Interiors — two decades of interior design, construction, and genuine material supply across Kerala."
+        title="About | Interior World — 20+ Years of Craftsmanship"
+        description="Learn the story of Interior World — two decades of interior design, construction, and genuine material supply across Kerala."
         path="/about"
       />
       <PageBanner
@@ -54,7 +54,7 @@ export default function About() {
             <div className="overflow-hidden rounded-2xl border border-white/10">
               <img
                 src={unsplash('photo-1600585154340-be6161a56a0c', 800, 80)}
-                alt="A Kottayam Interiors project"
+                alt="A Interior World project"
                 loading="lazy"
                 className="w-full object-cover"
               />

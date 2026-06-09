@@ -53,12 +53,12 @@ export function Navbar() {
         <Link to="/" className="group flex items-center gap-2.5">
           <img
             src="/logo.png"
-            alt="Kottayam Interiors"
+            alt="Interior World"
             className="h-10 w-10 shrink-0 rounded-full md:h-11 md:w-11"
           />
           <span className="font-serif text-xl font-bold tracking-tight text-warm-white md:text-2xl">
-            Kottayam
-            <span className="text-gradient-gold"> Interiors</span>
+            Interior
+            <span className="text-gradient-gold"> World</span>
           </span>
         </Link>
 

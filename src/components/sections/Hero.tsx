@@ -31,7 +31,7 @@ export function Hero() {
       <div className="absolute inset-0">
         <img
           src={unsplash('photo-1600585154340-be6161a56a0c', 1920, 80)}
-          alt="Luxury interior designed by Kottayam Interiors"
+          alt="Luxury interior designed by Interior World"
           className="h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/70 to-charcoal/40" />

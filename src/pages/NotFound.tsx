@@ -7,7 +7,7 @@ export default function NotFound() {
   return (
     <>
       <Seo
-        title="Page Not Found | Kottayam Interiors"
+        title="Page Not Found | Interior World"
         description="The page you’re looking for doesn’t exist."
         path="/404"
       />
