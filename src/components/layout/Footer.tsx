@@ -1,9 +1,5 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { MapPin, Phone, Mail, Clock, ArrowRight } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { useToast } from '@/components/ui/use-toast'
+import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 import { site, branches } from '@/data/site'
 import { productCategories } from '@/data/products'
 import {
@@ -21,20 +17,6 @@ const quickLinks = [
 ]
 
 export function Footer() {
-  const [email, setEmail] = useState('')
-  const { toast } = useToast()
-
-  const onSubscribe = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (!email) return
-    toast({
-      variant: 'success',
-      title: 'Subscribed!',
-      description: 'Thanks for joining our newsletter.',
-    })
-    setEmail('')
-  }
-
   return (
     <footer className="relative border-t border-white/10 bg-graphite">
       {/* Marble gradient top accent */}
@@ -171,25 +153,6 @@ export function Footer() {
               <span>{site.hours}</span>
             </li>
           </ul>
-
-          <form onSubmit={onSubscribe} className="mt-6">
-            <label className="text-xs uppercase tracking-wider text-warm-white/50">
-              Newsletter
-            </label>
-            <div className="mt-2 flex gap-2">
-              <Input
-                type="email"
-                required
-                placeholder="Your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="h-10"
-              />
-              <Button type="submit" size="icon" variant="luxury" aria-label="Subscribe">
-                <ArrowRight className="h-4 w-4" />
-              </Button>
-            </div>
-          </form>
         </div>
       </div>
 

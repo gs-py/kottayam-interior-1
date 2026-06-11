@@ -48,8 +48,8 @@ export const site = {
   hours: 'Mon–Sat: 9:00 AM – 6:30 PM',
   mapEmbed: branches[0].mapEmbed,
   social: {
-    instagram: 'https://www.instagram.com/interior___world',
-    facebook: 'https://www.facebook.com/InteriorworldKottayam',
+    instagram: 'https://www.instagram.com/interior_____world/?hl=en',
+    facebook: 'https://www.facebook.com/profile.php?id=100089795056506',
   },
 }
 
