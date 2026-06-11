@@ -8,6 +8,8 @@ import { Brands } from '@/components/sections/Brands'
 import { Contact } from '@/components/sections/Contact'
 import { unsplash } from '@/lib/utils'
 import { stats } from '@/data/site'
+import team1 from '@/assets/team/team-1.jpg'
+import team2 from '@/assets/team/team-2.jpg'
 
 const milestones = [
   { year: '2003', title: 'Founded', text: 'Opened as a small building-materials shop in Kottayam.' },
@@ -18,10 +20,8 @@ const milestones = [
 ]
 
 const team = [
-  { name: 'Rajeev Menon', role: 'Founder & Principal', image: 'photo-1507003211169-0a1dd7228f2d' },
-  { name: 'Anjana Thomas', role: 'Lead Interior Designer', image: 'photo-1494790108377-be9c29b29330' },
-  { name: 'Firoz Khan', role: 'Architect', image: 'photo-1500648767791-00dcc994a43e' },
-  { name: 'Divya Nair', role: 'Project Manager', image: 'photo-1438761681033-6461ffad8d80' },
+  { name: 'Abraham Santhosh', image: team1 },
+  { name: 'Santhosh Abraham', image: team2 },
 ]
 
 const certifications = [
@@ -160,23 +160,22 @@ export default function About() {
             title="The people behind the work"
             subtitle="Experienced designers, architects, and crew who care about the details."
           />
-          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mx-auto mt-16 grid max-w-2xl gap-6 sm:grid-cols-2">
             {team.map((member, i) => (
               <Reveal key={member.name} delay={i * 0.07}>
                 <div className="group overflow-hidden rounded-2xl border border-white/10 bg-graphite/60">
                   <div className="overflow-hidden">
                     <img
-                      src={unsplash(member.image, 400, 80)}
+                      src={member.image}
                       alt={member.name}
                       loading="lazy"
-                      className="aspect-square w-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
+                      className="aspect-square w-full object-cover"
                     />
                   </div>
                   <div className="p-5 text-center">
                     <h4 className="font-serif text-lg font-semibold text-warm-white">
                       {member.name}
                     </h4>
-                    <p className="mt-1 text-sm text-copper">{member.role}</p>
                   </div>
                 </div>
               </Reveal>

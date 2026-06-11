@@ -6,7 +6,6 @@ import { ProductCategories } from '@/components/sections/ProductCategories'
 import { WhyChooseUs } from '@/components/sections/WhyChooseUs'
 import { Brands } from '@/components/sections/Brands'
 import { ProjectsGallery } from '@/components/sections/ProjectsGallery'
-import { Testimonials } from '@/components/sections/Testimonials'
 import { Contact } from '@/components/sections/Contact'
 
 export default function Home() {
@@ -24,7 +23,7 @@ export default function Home() {
       <WhyChooseUs />
       <Brands />
       <ProjectsGallery />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
     </>
   )

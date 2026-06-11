@@ -199,6 +199,17 @@ export function Footer() {
           <p>
             © {2026} {site.name}. All rights reserved.
           </p>
+          <p>
+            This site is powered by{' '}
+            <a
+              href="https://www.xone13.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-copper"
+            >
+              xone13
+            </a>
+          </p>
           <div className="flex gap-6">
             <Link to="/contact" className="hover:text-copper">
               Privacy Policy
