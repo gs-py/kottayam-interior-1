@@ -1,7 +1,6 @@
 import {
   Sofa,
   Building2,
-  HardHat,
   Package,
   PanelTop,
   Layers,
