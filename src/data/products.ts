@@ -15,6 +15,9 @@ import imgXlpe from '@/assets/products/xlpe-insulation-sheets.jpg'
 import imgInsuboard from '@/assets/products/insuboard-xps.jpg'
 import imgGyprocGypsum from '@/assets/products/gyproc-gypsum-board.jpg'
 import imgFramerockChannels from '@/assets/products/framerock-ordinary-ceiling-channels.jpg'
+import imgGyprocGypserra from '@/assets/products/gyproc-gypserra-ceiling-channel.jpg'
+import imgGyprocTruesteel from '@/assets/products/gyproc-truesteel-ceiling-channel.jpg'
+import imgGyprocXpert from '@/assets/products/gyproc-xpert-ceiling-channel.jpg'
 
 export const productCategories: ProductCategory[] = [
   { slug: 'gypsum', name: 'Gypsum Board', image: 'photo-1604709177225-055f99402ea3' },
@@ -127,17 +130,53 @@ export const products: Product[] = [
 
   // ── Channels ─────────────────────────────────────────────────────────
   {
-    slug: 'gyproc-ceiling-channels',
-    name: 'Gyproc Ceiling Channels',
+    slug: 'gyproc-gypserra-ceiling-channel',
+    name: 'Gyproc Gypserra Ceiling Channel',
     brand: 'Gyproc',
     category: 'channels',
-    image: 'photo-1581092160562-40aa08e78837',
+    image: imgGyprocGypserra,
     short:
-      'Xpert, Truesteel & Gypserra GI channels for strong, true ceiling framework.',
+      'Embossed GI Gypserra channels — ceiling section, intermediate, perimeter & angle for rigid framing.',
+    description:
+      'Gyproc Gypserra is a complete galvanised-iron framing system for false ceilings, featuring a distinctive embossed knurl pattern that adds rigidity and grip. The range covers the ceiling section, intermediate channel, perimeter channel and ceiling angle needed to build a true, durable suspended-ceiling grid.',
     specs: [
-      { label: 'Range', value: 'Xpert / Truesteel / Gypserra' },
+      { label: 'System', value: 'Section / Intermediate / Perimeter / Angle' },
       { label: 'Material', value: 'Galvanised iron' },
-      { label: 'Length', value: '3.0 m' },
+      { label: 'Finish', value: 'Embossed knurl' },
+      { label: 'Use', value: 'False-ceiling framework' },
+    ],
+  },
+  {
+    slug: 'gyproc-truesteel-ceiling-channel',
+    name: 'Gyproc Truesteel Ceiling Channel',
+    brand: 'Gyproc',
+    category: 'channels',
+    image: imgGyprocTruesteel,
+    short:
+      'Premium "No Compromise Steel" GI channels for high-strength, true ceiling framing.',
+    description:
+      'Truesteel by Gyproc is a premium Gypframe ceiling channel system built for strength and dimensional accuracy. Marketed as "The No Compromise Steel", it delivers consistent gauge and straightness for robust suspended ceilings and drywall partitions.',
+    specs: [
+      { label: 'Brand', value: 'Truesteel by Gyproc' },
+      { label: 'Material', value: 'Galvanised steel' },
+      { label: 'Grade', value: 'Premium Gypframe' },
+      { label: 'Use', value: 'Ceiling & drywall framing' },
+    ],
+  },
+  {
+    slug: 'gyproc-xpert-ceiling-channel',
+    name: 'Gyproc Xpert Ceiling Channel',
+    brand: 'Gyproc',
+    category: 'channels',
+    image: imgGyprocXpert,
+    short:
+      'Embossed GI Xpert channels engineered for strong, true and reliable ceiling framework.',
+    description:
+      'Gyproc Xpert Channels are galvanised-iron framing members with an embossed surface for added rigidity. The range provides the sections and channels required to build accurate, long-lasting suspended ceilings and drywall systems.',
+    specs: [
+      { label: 'Range', value: 'Xpert Channels' },
+      { label: 'Material', value: 'Galvanised iron' },
+      { label: 'Finish', value: 'Embossed' },
       { label: 'Use', value: 'Ceiling & drywall framing' },
     ],
   },
