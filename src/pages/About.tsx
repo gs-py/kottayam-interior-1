@@ -20,15 +20,15 @@ const milestones = [
 ]
 
 const team = [
-  { name: 'Abraham Santhosh', image: team1 },
-  { name: 'Santhosh Abraham', image: team2 },
+ 
+  { name: 'Santhosh Abraham', image: team2, role: 'Proprietor' },
+   { name: 'Abraham Santhosh', image: team1 },
 ]
 
 const certifications = [
   'Authorised Saint-Gobain Gyproc dealer',
-  'Certified installation crews',
   'ISO-aligned quality processes',
-  'Licensed & insured operations',
+  
 ]
 
 export default function About() {
@@ -162,8 +162,8 @@ export default function About() {
           />
           <div className="mx-auto mt-16 grid max-w-2xl gap-6 sm:grid-cols-2">
             {team.map((member, i) => (
-              <Reveal key={member.name} delay={i * 0.07}>
-                <div className="group overflow-hidden rounded-2xl border border-white/10 bg-graphite/60">
+              <Reveal key={member.name} delay={i * 0.07} className="h-full">
+                <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-graphite/60">
                   <div className="overflow-hidden">
                     <img
                       src={member.image}
@@ -176,6 +176,9 @@ export default function About() {
                     <h4 className="font-serif text-lg font-semibold text-warm-white">
                       {member.name}
                     </h4>
+                    {member.role && (
+                      <p className="mt-1 text-sm text-copper">{member.role}</p>
+                    )}
                   </div>
                 </div>
               </Reveal>

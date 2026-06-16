@@ -45,7 +45,7 @@ export const site = {
   whatsapp: '919995438509',
   email: 'interiorworldktm@gmail.com',
   address: branches[0].address,
-  hours: 'Mon–Sat: 9:00 AM – 6:30 PM',
+  hours: 'Mon–Sat: 9:00 AM – 6:00 PM',
   mapEmbed: branches[0].mapEmbed,
   social: {
     instagram: 'https://www.instagram.com/interior_____world/?hl=en',

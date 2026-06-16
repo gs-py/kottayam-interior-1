@@ -14,11 +14,15 @@ export function Services() {
           subtitle="Design, build, and supply — every part of your project handled by one trusted team."
         />
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-16 flex flex-wrap justify-center gap-6">
           {services.map((service, i) => {
             const Icon = service.icon
             return (
-              <Reveal key={service.slug} delay={i * 0.08}>
+              <Reveal
+                key={service.slug}
+                delay={i * 0.08}
+                className="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]"
+              >
                 <Link
                   to={`/services/${service.slug}`}
                   className="group flex h-full flex-col rounded-2xl border border-white/10 bg-graphite/60 p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-copper/50 hover:bg-graphite"

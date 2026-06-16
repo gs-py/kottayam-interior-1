@@ -41,7 +41,7 @@ export const brands: Brand[] = [
   },
   {
     slug: 'spl-insuboard',
-    name: 'SPL INSUBoard',
+    name: 'INSUBoard',
     highlight: 'SPL',
     category: 'Insulation',
     description:

@@ -43,23 +43,7 @@ export const services: Service[] = [
     ],
     image: 'photo-1487958449943-2429e8be8625',
   },
-  {
-    slug: 'construction-consulting',
-    title: 'Construction Consulting',
-    icon: HardHat,
-    short:
-      'Expert guidance that keeps your build on time, on budget, and on standard.',
-    description:
-      'Two decades on site means we anticipate problems before they cost you. We advise on contractors, costing, materials, and quality control across the full construction lifecycle.',
-    features: [
-      'Cost estimation & BOQ',
-      'Contractor selection',
-      'Quality & progress audits',
-      'Material specification',
-      'Project scheduling',
-    ],
-    image: 'photo-1503387762-592deb58ef4e',
-  },
+ 
   {
     slug: 'material-supply',
     title: 'Material Supply',

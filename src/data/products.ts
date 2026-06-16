@@ -14,6 +14,7 @@ import imgHiluxTiles from '@/assets/products/hilux-calcium-silicate-ceiling-tile
 import imgXlpe from '@/assets/products/xlpe-insulation-sheets.jpg'
 import imgInsuboard from '@/assets/products/insuboard-xps.jpg'
 import imgGyprocGypsum from '@/assets/products/gyproc-gypsum-board.jpg'
+import imgFramerockChannels from '@/assets/products/framerock-ordinary-ceiling-channels.jpg'
 
 export const productCategories: ProductCategory[] = [
   { slug: 'gypsum', name: 'Gypsum Board', image: 'photo-1604709177225-055f99402ea3' },
@@ -135,6 +136,21 @@ export const products: Product[] = [
       'Xpert, Truesteel & Gypserra GI channels for strong, true ceiling framework.',
     specs: [
       { label: 'Range', value: 'Xpert / Truesteel / Gypserra' },
+      { label: 'Material', value: 'Galvanised iron' },
+      { label: 'Length', value: '3.0 m' },
+      { label: 'Use', value: 'Ceiling & drywall framing' },
+    ],
+  },
+  {
+    slug: 'framerock-ordinary-ceiling-channels',
+    name: 'Framerock Ordinary Ceiling Channels',
+    brand: 'Framerock',
+    category: 'channels',
+    image: imgFramerockChannels,
+    short:
+      'Economical GI ceiling channels for everyday false-ceiling and partition framing.',
+    specs: [
+      { label: 'Type', value: 'Ordinary ceiling channel' },
       { label: 'Material', value: 'Galvanised iron' },
       { label: 'Length', value: '3.0 m' },
       { label: 'Use', value: 'Ceiling & drywall framing' },
