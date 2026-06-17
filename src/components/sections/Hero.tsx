@@ -30,9 +30,13 @@ export function Hero() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src={unsplash('photo-1600585154340-be6161a56a0c', 1920, 80)}
+          src={unsplash('photo-1600585154340-be6161a56a0c', 1280, 55)}
+          srcSet={`${unsplash('photo-1600585154340-be6161a56a0c', 768, 55)} 768w, ${unsplash('photo-1600585154340-be6161a56a0c', 1280, 55)} 1280w, ${unsplash('photo-1600585154340-be6161a56a0c', 1920, 55)} 1920w`}
+          sizes="100vw"
           alt="Luxury interior designed by Interior World"
           className="h-full w-full object-cover"
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/70 to-charcoal/40" />
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 to-transparent" />
