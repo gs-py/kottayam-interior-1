@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import type { ReactNode } from 'react'
 
 interface RevealProps {
@@ -11,7 +11,7 @@ interface RevealProps {
 /** Fade-and-rise on scroll into view. */
 export function Reveal({ children, delay = 0, y = 28, className }: RevealProps) {
   return (
-    <motion.div
+    <m.div
       className={className}
       initial={{ opacity: 0, y }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -23,6 +23,6 @@ export function Reveal({ children, delay = 0, y = 28, className }: RevealProps) 
       }}
     >
       {children}
-    </motion.div>
+    </m.div>
   )
 }

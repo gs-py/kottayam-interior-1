@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import { ChevronRight } from 'lucide-react'
 import { img } from '@/lib/utils'
 
@@ -56,7 +56,7 @@ export function PageBanner({
           </nav>
         )}
 
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -78,7 +78,7 @@ export function PageBanner({
               {subtitle}
             </p>
           )}
-        </motion.div>
+        </m.div>
       </div>
     </section>
   )

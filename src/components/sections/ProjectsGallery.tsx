@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import { ChevronLeft, ChevronRight, Expand } from 'lucide-react'
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import {
@@ -66,7 +66,7 @@ export function ProjectsGallery({ showHeader = true }: ProjectsGalleryProps) {
         {/* Masonry */}
         <div className="mt-12 columns-1 gap-5 sm:columns-2 lg:columns-3">
           {filtered.map((project, i) => (
-            <motion.button
+            <m.button
               key={project.id}
               layout
               initial={{ opacity: 0, y: 24 }}
@@ -96,7 +96,7 @@ export function ProjectsGallery({ showHeader = true }: ProjectsGalleryProps) {
               <span className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-charcoal/60 text-warm-white opacity-0 backdrop-blur transition-opacity group-hover:opacity-100">
                 <Expand className="h-4 w-4" />
               </span>
-            </motion.button>
+            </m.button>
           ))}
         </div>
       </div>

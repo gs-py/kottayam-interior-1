@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
+import { m } from 'framer-motion'
 import { ArrowRight, Phone } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { unsplash } from '@/lib/utils'
@@ -44,36 +44,36 @@ export function Hero() {
 
       {/* Content */}
       <div className="container relative z-10">
-        <motion.div
+        <m.div
           variants={container}
           initial="hidden"
           animate="show"
           className="max-w-3xl"
         >
-          <motion.div variants={item} className="mb-6 flex items-center gap-3">
+          <m.div variants={item} className="mb-6 flex items-center gap-3">
             <span className="h-px w-10 bg-copper" />
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-copper">
               Interior Design • Kottayam, Kerala
             </span>
-          </motion.div>
+          </m.div>
 
-          <motion.h1
+          <m.h1
             variants={item}
             className="font-serif text-5xl font-bold leading-[1.05] text-warm-white sm:text-6xl lg:text-7xl xl:text-8xl"
           >
             Spaces that feel
             <span className="block text-gradient-gold">crafted, not built.</span>
-          </motion.h1>
+          </m.h1>
 
-          <motion.p
+          <m.p
             variants={item}
             className="mt-6 max-w-xl text-lg leading-relaxed text-warm-white/70"
           >
             Premium interior design, architecture, and genuine building materials —
             delivered with two decades of craftsmanship across central Kerala.
-          </motion.p>
+          </m.p>
 
-          <motion.div variants={item} className="mt-10 flex flex-wrap gap-4">
+          <m.div variants={item} className="mt-10 flex flex-wrap gap-4">
             <Button variant="luxury" size="lg" asChild>
               <Link to="/contact">
                 Get a Free Consultation <ArrowRight className="h-4 w-4" />
@@ -84,11 +84,11 @@ export function Hero() {
                 <Phone className="h-4 w-4" /> {site.phone}
               </a>
             </Button>
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
 
         {/* Trust bar */}
-        <motion.div
+        <m.div
           variants={item}
           initial="hidden"
           animate="show"
@@ -106,13 +106,13 @@ export function Hero() {
               </div>
             </div>
           ))}
-        </motion.div>
+        </m.div>
       </div>
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
         <div className="flex h-10 w-6 items-start justify-center rounded-full border-2 border-warm-white/30 p-1.5">
-          <motion.span
+          <m.span
             animate={{ y: [0, 8, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
             className="h-2 w-1 rounded-full bg-copper"

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence, m } from 'framer-motion'
 import { Menu, X, Phone } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -80,7 +80,7 @@ export function Navbar() {
                   <>
                     {link.label}
                     {isActive && (
-                      <motion.span
+                      <m.span
                         layoutId="nav-underline"
                         className="absolute -bottom-1.5 left-0 h-px w-full bg-gradient-to-r from-bronze to-gold"
                       />
@@ -118,7 +118,7 @@ export function Navbar() {
       {/* Mobile drawer */}
       <AnimatePresence>
         {open && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -127,7 +127,7 @@ export function Navbar() {
           >
             <div className="flex flex-1 flex-col justify-center gap-2 px-8">
               {navLinks.map((link, i) => (
-                <motion.div
+                <m.div
                   key={link.to}
                   initial={{ opacity: 0, x: -24 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -145,7 +145,7 @@ export function Navbar() {
                   >
                     {link.label}
                   </NavLink>
-                </motion.div>
+                </m.div>
               ))}
             </div>
             <div className="space-y-4 border-t border-white/10 px-8 py-8">
@@ -160,7 +160,7 @@ export function Navbar() {
                 <Link to="/contact">Get a Free Quote</Link>
               </Button>
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </header>

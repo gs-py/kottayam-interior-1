@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react'
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence, m } from 'framer-motion'
 import { ChevronLeft, ChevronRight, Star, Quote } from 'lucide-react'
 import { SectionHeader } from '@/components/shared/SectionHeader'
 import { unsplash } from '@/lib/utils'
@@ -43,7 +43,7 @@ export function Testimonials() {
           <Quote className="absolute -top-6 left-0 h-16 w-16 text-copper/15" />
 
           <AnimatePresence mode="wait">
-            <motion.div
+            <m.div
               key={t.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -73,7 +73,7 @@ export function Testimonials() {
                   <div className="text-sm text-warm-white/50">{t.role}</div>
                 </div>
               </div>
-            </motion.div>
+            </m.div>
           </AnimatePresence>
 
           {/* Controls */}

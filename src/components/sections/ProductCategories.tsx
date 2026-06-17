@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { m, useScroll, useTransform } from 'framer-motion'
 import { ArrowUpRight } from 'lucide-react'
 import { SectionHeader } from '@/components/shared/SectionHeader'
 import { unsplash } from '@/lib/utils'
@@ -31,7 +31,7 @@ function ParallaxCard({
         to={`/products?category=${slug}`}
         className="group relative block h-72 overflow-hidden rounded-2xl border border-white/10"
       >
-        <motion.img
+        <m.img
           style={{ y }}
           src={unsplash(image, 800, 80)}
           alt={name}
