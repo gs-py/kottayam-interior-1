@@ -14,6 +14,7 @@ import imgHiluxTiles from '@/assets/products/hilux-calcium-silicate-ceiling-tile
 import imgXlpe from '@/assets/products/xlpe-insulation-sheets.jpg'
 import imgInsuboard from '@/assets/products/insuboard-xps.jpg'
 import imgGyprocGypsum from '@/assets/products/gyproc-gypsum-board.jpg'
+import imgGyprocPlaster from '@/assets/products/gyproc-plaster.jpg'
 import imgFramerockChannels from '@/assets/products/framerock-ordinary-ceiling-channels.jpg'
 import imgGyprocGypserra from '@/assets/products/gyproc-gypserra-ceiling-channel.jpg'
 import imgGyprocTruesteel from '@/assets/products/gyproc-truesteel-ceiling-channel.jpg'
@@ -110,6 +111,23 @@ export const products: Product[] = [
       { label: 'Grade', value: 'Premium' },
       { label: 'Use', value: 'Ceilings & partitions' },
       { label: 'Form', value: 'Gypsum board' },
+    ],
+  },
+  {
+    slug: 'gyproc-plaster',
+    name: 'Gyproc Plaster',
+    brand: 'Gyproc',
+    category: 'gypsum',
+    image: imgGyprocPlaster,
+    short:
+      "India's first low-carbon, EPD-verified gypsum plaster range for smooth wall finishes.",
+    description:
+      'Gyproc Plaster is a range of ready-to-use gypsum plasters from Saint-Gobain — India’s first low-carbon plaster, now EPD (Environmental Product Declaration) verified to meet environmental standards with a low carbon impact. The range covers one-coat plasters (Elite 100, Elite MR, Supreme 80), the Xpert+ stucco plaster and Gyproc Elite FP gypsum finishing plaster, delivering smooth, crack-resistant wall surfaces without traditional sand-cement plastering.',
+    specs: [
+      { label: 'Maker', value: 'Saint-Gobain Gyproc' },
+      { label: 'Range', value: 'Elite 100 / Elite MR / Supreme 80 / Xpert+ / Elite FP' },
+      { label: 'Certification', value: 'EPD verified, low-carbon' },
+      { label: 'Use', value: 'Smooth interior wall finishing' },
     ],
   },
   {
