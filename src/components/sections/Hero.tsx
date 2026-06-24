@@ -69,7 +69,7 @@ export function Hero() {
             variants={item}
             className="mt-6 max-w-xl text-lg leading-relaxed text-warm-white/70"
           >
-            Premium interior design, architecture, and genuine building materials —
+            Premium interior design, and genuine building materials —
             delivered with two decades of craftsmanship across central Kerala.
           </m.p>
 
