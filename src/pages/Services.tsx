@@ -13,7 +13,7 @@ export default function Services() {
     <>
       <Seo
         title="Services | Interior World — Design, Build & Material Supply"
-        description="Interior design, architecture, construction consulting, material supply, ceiling installation, and gypsum works in Kottayam, Kerala."
+        description="Interior design, construction consulting, material supply, ceiling installation, and gypsum works in Kottayam, Kerala."
         path="/services"
       />
       <PageBanner

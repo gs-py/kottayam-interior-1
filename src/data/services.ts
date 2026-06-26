@@ -1,6 +1,5 @@
 import {
   Sofa,
-  Building2,
   Package,
   PanelTop,
   Layers,
@@ -25,24 +24,6 @@ export const services: Service[] = [
     ],
     image: 'photo-1600585154340-be6161a56a0c',
   },
-  {
-    slug: 'architecture',
-    title: 'Architecture',
-    icon: Building2,
-    short:
-      'Thoughtful architecture rooted in Kerala’s climate, light, and living traditions.',
-    description:
-      'Our architects shape homes and commercial spaces that feel inevitable — generous with daylight, cross-ventilation, and a strong sense of place. We handle drawings, approvals, and site coordination.',
-    features: [
-      'Concept & schematic design',
-      'Working drawings & approvals',
-      'Vastu-conscious planning',
-      'Site supervision',
-      'Sustainable detailing',
-    ],
-    image: 'photo-1487958449943-2429e8be8625',
-  },
- 
   {
     slug: 'material-supply',
     title: 'Material Supply',
